@@ -13,15 +13,41 @@ from tinytroupe.extraction import ArtifactExporter
 class QuirkyEvent:
     UNEXPECTED_EVENTS = [
         "accidentally trained an AI to write poetry about debugging errors",
-        "discovered a correlation between coffee consumption and code quality",
+        "discovered a correlation between coffee consumption and code quality", 
         "found a pattern in city traffic that looks like a neural network",
-        "started an underground tech meditation group"
+        "started an underground tech meditation group",
+        "realized my houseplants respond to different programming languages",
+        "found that my code runs faster when I whisper to it",
+        "discovered my rubber duck debugger has gained sentience",
+        "noticed my dreams are now formatted in Python syntax",
+        "started a support group for recovering perfectionists in tech",
+        "built an AI that only communicates through haiku"
     ]
 
     QUIRKY_THOUGHTS = [
         "What if consciousness is just a really well-optimized algorithm?",
         "Do computers dream of electric debugging?",
-        "Maybe the universe is just one big neural network..."
+        "Maybe the universe is just one big neural network...",
+        "What if bugs are just features trying to break free?",
+        "Perhaps git commits are really just time travel checkpoints",
+        "Are coffee machines actually primitive AIs?",
+        "What if our reality is just someone else's unit test?",
+        "Maybe semicolons are really just code emotions",
+        "Do binary trees feel lonely?",
+        "What if we're all just functions in a cosmic codebase?"
+    ]
+
+    EMOTIONAL_STATES = [
+        "feeling particularly recursive today",
+        "experiencing temporary buffer overflow of emotions",
+        "stuck in an infinite loop of contemplation",
+        "garbage collecting old memories",
+        "optimistically optimizing",
+        "deeply nested in thought",
+        "experiencing high-bandwidth joy",
+        "processing feelings asynchronously",
+        "caught in a positive feedback loop",
+        "maintaining emotional state integrity"
     ]
 
 
@@ -46,8 +72,20 @@ class LisaLifeMemoryFaculty(CustomMentalFaculty):
     def _process_reflection(self, agent, action):
         reflection = f"I find myself thinking about {action['content']}..."
         agent.think(reflection)
-        if random.random() < 0.3:
+        
+        # Add emotional state
+        emotional_state = random.choice(QuirkyEvent.EMOTIONAL_STATES)
+        agent.think(f"I am {emotional_state}...")
+        
+        # Increased chance of quirky thoughts when emotional
+        if random.random() < 0.5:
             agent.think(random.choice(QuirkyEvent.QUIRKY_THOUGHTS))
+            
+        # Sometimes chain thoughts together
+        if random.random() < 0.3:
+            agent.think("This makes me wonder...")
+            agent.think(random.choice(QuirkyEvent.QUIRKY_THOUGHTS))
+            
         return True
 
     def _process_reminisce(self, agent, action):
@@ -196,11 +234,26 @@ class SoapOperaWorld(TinyWorld):
 
     def agents_reflect_in_diaries(self, chapter_num: int):
         for agent in self.agents:
-            entry = f"After writing chapter {chapter_num}, I feel..."
-            if random.random() < 0.5:
-                entry += f" Torn between my professional duties and my personal longing. The story's events mirror my own secret struggles..."
+            # Start with emotional state
+            emotional_state = random.choice(QuirkyEvent.EMOTIONAL_STATES)
+            entry = f"After writing chapter {chapter_num}, I am {emotional_state}. "
+            
+            # Add main reflection
+            if random.random() < 0.4:
+                entry += f"Torn between my professional duties and my personal longing. The story's events mirror my own secret struggles... "
+            elif random.random() < 0.7:
+                entry += f"Proud and anxious. The chapter triggered memories of my past. I recall I once {random.choice(QuirkyEvent.UNEXPECTED_EVENTS)} "
             else:
-                entry += f" Proud and anxious. The chapter triggered memories of my past. I recall I once {random.choice(QuirkyEvent.UNEXPECTED_EVENTS)}."
+                entry += f"In a state of creative flow. While writing, {random.choice(QuirkyEvent.UNEXPECTED_EVENTS)} "
+            
+            # Add philosophical musing
+            if random.random() < 0.6:
+                entry += f"\nThis makes me wonder: {random.choice(QuirkyEvent.QUIRKY_THOUGHTS)} "
+            
+            # Add forward-looking statement
+            if random.random() < 0.4:
+                entry += f"\nMoving forward, I feel like I might {random.choice(QuirkyEvent.UNEXPECTED_EVENTS)}"
+            
             self.doc_manager.write_diary_entry(agent.name, entry)
 
 
