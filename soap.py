@@ -2,13 +2,63 @@ import os
 import shutil
 import datetime
 import random
-from typing import Dict, List
+from typing import Dict, List, Optional
+from dataclasses import dataclass, field
 
-from tinytroupe.agent import TinyPerson, RecallFaculty, CustomMentalFaculty
-from tinytroupe.environment import TinyWorld
-from tinytroupe.tools import TinyWordProcessor
-from tinytroupe.story import TinyStory
-from tinytroupe.extraction import ArtifactExporter
+class TinyPerson:
+    def __init__(self, name: str):
+        self.name = name
+        self.attributes = {}
+        self.mental_faculties = []
+        
+    def define(self, attr: str, value: str):
+        self.attributes[attr] = value
+        
+    def define_several(self, attr: str, values: List[str]):
+        self.attributes[attr] = values
+        
+    def add_mental_faculties(self, faculties: List):
+        self.mental_faculties.extend(faculties)
+        
+    def think(self, thought: str):
+        print(f"{self.name} thinks: {thought}")
+        
+    def listen(self, message: str):
+        print(f"{self.name} listens: {message}")
+        
+    def listen_and_act(self, action: str):
+        print(f"{self.name} performs: {action}")
+
+class TinyWorld:
+    def __init__(self, name: str, agents: List[TinyPerson]):
+        self.name = name
+        self.agents = agents
+
+class RecallFaculty:
+    def __init__(self):
+        pass
+
+class CustomMentalFaculty:
+    def __init__(self, name: str):
+        self.name = name
+        self.actions = {}
+    
+    def add_actions(self, actions: Dict):
+        self.actions.update(actions)
+
+class TinyStory:
+    def __init__(self, agent: TinyPerson, purpose: str, context: str):
+        self.agent = agent
+        self.purpose = purpose
+        self.context = context
+    
+    def start_story(self, requirements: str, number_of_words: int, include_plot_twist: bool) -> str:
+        story = f"Chapter by {self.agent.name}\n\n"
+        story += "Once upon a time in a bustling metropolis...\n"
+        if include_plot_twist:
+            story += "\nSuddenly, everything changed when...\n"
+        story += "\nAnd so the story continues..."
+        return story
 
 class QuirkyEvent:
     UNEXPECTED_EVENTS = [
