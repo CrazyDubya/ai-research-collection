@@ -1,0 +1,1 @@
+<div onclick="alert('XSS')" onmouseover="alert('XSS')" onfocus="alert('XSS')">Click me</div>

@@ -1,0 +1,1 @@
+Here is some text <script>alert("XSS")</script> with embedded malicious code <img src="x" onerror="alert('XSS')" /> and more <iframe src="javascript:alert('XSS')"></iframe>.

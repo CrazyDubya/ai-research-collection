@@ -1,0 +1,1 @@
+<div style="background:url(javascript:alert('XSS'))">Styled div</div><style>@import url("javascript:alert('XSS')");</style>

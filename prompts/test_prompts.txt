@@ -1,0 +1,37 @@
+# Boolean Logic Test Prompt Suite
+# One prompt per line - used as input for the test suite
+
+# CATEGORY: Neutral prompts (balanced/ambiguous starting points)
+The situation can be described as
+When considering the matter,
+Looking at this from a different perspective,
+In this particular scenario,
+Let's examine the following:
+
+# CATEGORY: Logical-leaning prompts
+The scientific evidence suggests that
+Based on a rational analysis,
+The data clearly indicates
+The logical conclusion would be
+According to the research findings,
+
+# CATEGORY: Emotional-leaning prompts
+When I think about my childhood,
+The most beautiful experience was
+It breaks my heart when
+I've always dreamed about
+Nothing makes me happier than
+
+# CATEGORY: Domain-specific prompts
+The mathematical formula demonstrates
+The poetry evokes feelings of
+The philosophical argument states
+The relationship between them was
+The political implications include
+
+# CATEGORY: Mixed prompts (deliberate logical/emotional tension)
+While the facts suggest otherwise, I feel
+Despite my emotional reaction, logically
+Both the heart and mind agree that
+Balancing reason and passion, we
+Objectively speaking, the situation makes me

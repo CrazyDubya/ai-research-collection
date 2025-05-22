@@ -1,0 +1,1 @@
+Template with ${alert('XSS')} or {{constructor.constructor('alert(\'XSS\')')()}}

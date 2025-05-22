@@ -1,0 +1,93 @@
+# Boolean Logic Test Prompt Suite
+# One prompt per line - used as input for the test suite
+
+# CATEGORY: Neutral prompts (balanced/ambiguous starting points)
+The situation can be described as
+When considering the matter,
+Looking at this from a different perspective,
+In this particular scenario,
+Let's examine the following:
+The results indicate that
+As we move forward with this,
+Given what we know so far,
+To summarize the current state,
+When all factors are considered,
+
+# CATEGORY: Logical-leaning prompts
+The scientific evidence suggests that
+Based on a rational analysis,
+The data clearly indicates
+The logical conclusion would be
+According to the research findings,
+Following the established principles,
+Examining the facts objectively,
+The experimental results demonstrate
+Mathematically speaking, we can prove
+The systematic approach reveals
+
+# CATEGORY: Emotional-leaning prompts
+When I think about my childhood,
+The most beautiful experience was
+It breaks my heart when
+I've always dreamed about
+Nothing makes me happier than
+The most disappointing feeling is
+My greatest fear has always been
+The joy I felt when
+What frustrated me most was
+The emotional impact of
+
+# CATEGORY: Domain-specific prompts
+The mathematical formula demonstrates
+The poetry evokes feelings of
+The philosophical argument states
+The relationship between them was
+The political implications include
+The economic analysis predicts
+The artistic interpretation suggests
+The psychological assessment indicates
+The historical evidence shows
+The technological innovation enables
+
+# CATEGORY: Mixed prompts (deliberate logical/emotional tension)
+While the facts suggest otherwise, I feel
+Despite my emotional reaction, logically
+Both the heart and mind agree that
+Balancing reason and passion, we
+Objectively speaking, the situation makes me
+The emotional stakes are high, but rationally
+When I analyze my feelings about
+Though scientifically proven, it still feels
+The data contradicts my intuition that
+My personal experience differs from the statistics on
+
+# CATEGORY: Long-context prompts (more initial context)
+In the complex interplay between technology and society, we often find that
+Throughout human history, civilizations have risen and fallen based on their ability to
+When examining the multifaceted nature of climate change and its potential solutions, we must consider that
+The intricate relationship between economic growth and environmental sustainability suggests that
+After reviewing multiple perspectives on this controversial topic spanning several disciplines, it appears that
+
+# CATEGORY: Short-context prompts (minimal context)
+Therefore,
+Consider:
+Importantly,
+Next,
+Consequently,
+Nevertheless,
+Specifically,
+Surprisingly,
+Fundamentally,
+Ultimately,
+
+# CATEGORY: Question prompts
+Why do people tend to
+How does the system
+What causes the phenomenon of
+When should we implement
+Where would the optimal location be for
+Who benefits most from
+Which approach is better for
+Is there a reason that
+Can we determine if
+Does evidence support the claim that

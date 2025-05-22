@@ -1,0 +1,1 @@
+Text with emojis 😀😈👾 and unusual combinations like 👨‍👩‍👧‍👦 that may need special handling.

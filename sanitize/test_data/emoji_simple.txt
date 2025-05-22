@@ -1,0 +1,1 @@
+Text with emojis 😀😈👾 that should be normalized

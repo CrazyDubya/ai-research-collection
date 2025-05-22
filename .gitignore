@@ -1,0 +1,122 @@
+.aider*
+
+# Environment and secrets
+.env
+.env.local
+.env.*
+*.key
+config.ini
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Python cache and bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Generated data and output
+generated_documents/
+thespian_data/
+Event_Documentations/
+logs/
+*.log
+results/
+hackathon_output/
+hackathon_output2/
+story_output/
+simulation_docs/
+lisa_diary/
+lisa_knowledge/
+
+# Build artifacts and distributions
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+
+# System files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Backup files
+*.bak
+*backup*
+*~
+*.orig
+*.tmp
+
+# Large data files
+*.csv
+*.png
+*.jpeg
+*.jpg
+*.gif
+*.pdf
+*.zip
+*.tar.gz
+*.rar
+
+# Temporary and cache directories
+.tmp.driveupload/
+.cache/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Node modules (for any JS projects)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Analysis and report files
+*.json
+*.md
+!README.md
+!LICENSE.md
+
+# Character and model data
+char_xml/
+char_json/
+
+# Patch and config files
+.patch_config.json
+*.patch
+
+# Virtual environments and binaries
+vast
+
+# Exclude specific directories
+ZIPed-AR/
+*AR/
+TinyTroupe/
