@@ -1,0 +1,27 @@
+'# AI Research Collection Configuration': null
+'# Customize these settings for your experiments': null
+boolean_logic:
+  '# Add your own logical/emotional words and phrases': null
+  '# Classification sensitivity (0.0-1.0)': null
+  classification_threshold: 0.5
+  custom_emotional_words:
+  - compassionate
+  - empathetic
+  - heartfelt
+  custom_logical_words:
+  - algorithm
+  - computation
+  - systematic
+experiments:
+  '# Default experiment settings': null
+  num_iterations: 100
+  random_seed: 42
+  save_intermediate_results: true
+models:
+  '# GPU settings': null
+  '# Your preferred models for experiments': null
+  gpu_memory_fraction: 0.8
+  preferred_models:
+  - gpt2
+  - microsoft/DialoGPT-medium
+  use_gpu: true
