@@ -101,9 +101,17 @@ yarn-error.log*
 
 # Analysis and report files
 *.json
+!config/sample_config.yaml
+!plugins/*/
 *.md
 !README.md
 !LICENSE.md
+!ENHANCEMENT_SUMMARY.md
+
+# AI Research Collection specific
+model_cache/
+experiment_results/
+config/ai_research_config.yaml
 
 # Character and model data
 char_xml/
